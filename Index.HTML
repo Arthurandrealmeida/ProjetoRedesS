@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+ <style>
+    * {
+        margin:0px;
+        padding:0px;
+    }
+
+    body {
+    background: url('imagens/fundo-madeira.jpg');
+    }
+
+    main {
+        position: relative;
+        height: 100vh; /* sem essa linha o main que é o conteudo principal iria ficar com uma brecha, por isso a imagem iria ficar um pouco mais pra cima */
+    }
+
+    section#telefone {
+        
+        position:absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%); /* sem essa linha o ponto de refecencia sera a ponta esquerda da imagem, não iria ficar centralizado, nesta linha esta falando que vai trasformar o ponto de referencia no meio por conta do -50% -50% o que ta no meio da imagem */
+        height: 627px;
+        width: 311px;
+        background:url(imagens/frame-iphone.png) no-repeat;
+        }
+    iframe#telaa {
+        position:relative;
+        top:80px;
+        left:22px;
+        width: 270px;
+        height: 472px;
+        }
+
+        
+    section#redes img {
+        width: 60px;
+        margin:10px;
+        border-radius:50%;
+        box-sizing: border-box; /* agora a borda faz parte do objeto, tire essa linha e arraste o mouse para ver */ 
+    }
+
+    section#redes img:hover {
+        border: 2px solid white
+    }
+ </style>
+  
+</head>
+<body>
+     <main>
+        <section id="telefone">
+            <iframe src="Home.HTML" name="tela2" id="telaa" frameborder="0"></iframe>
+        </section>
+
+        <section id="redes" >
+            <a href="#" target="tela2"> </a><img src="imagens/logo-home.jpg"> </a> <br>
+            <a href="youtube.HTML" target="tela2"> <img src="imagens/logo-youtube.jpg" alt="YouTube"></a><br>
+            <a href="git.HTML" target="tela2"> <img src="imagens/logo-github.jpg"> </a> <br>
+            <a href="insta.HTML" target="tela2"> <img src="imagens/logo-instagram.jpg"> </a> <br>
+            <a href="twitter.HTML" target="tela2"> <img src="imagens/logo-twitter.jpg"> </a> <br>
+            <a href="face.HTML" target="tela2"> <img src="imagens/logo-facebook.jpg"> </a> <br>
+        </section>
+     </main>
+
+</body>
+</html>
